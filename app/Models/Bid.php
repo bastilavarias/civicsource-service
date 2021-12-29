@@ -11,6 +11,6 @@ class Bid extends Model
 
     public function property(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Property::class, 'property_id', 'id');
+        return $this->hasOne(Property::class, 'property_id', 'id');
     }
 }

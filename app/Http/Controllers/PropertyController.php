@@ -8,7 +8,7 @@ class PropertyController extends Controller
 {
     public function show($id)
     {
-        $property = Property::find($id);
+        $property = Property::with('bid')->find($id);
 
         if ($property) {
             return customResponse()
