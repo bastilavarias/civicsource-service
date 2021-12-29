@@ -11,6 +11,6 @@ class Bid extends Model
 
     public function property()
     {
-        return $this->hasOne(Property::class, 'property_id', 'id');
+        return $this->hasOne(Property::class, 'id', 'property_id');
     }
 }
