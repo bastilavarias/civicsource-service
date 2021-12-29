@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/property/{id}', [
+    \App\Http\Controllers\PropertyController::class,
+    'show',
+]);
