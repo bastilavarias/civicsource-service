@@ -24,8 +24,9 @@ class PropertySeeder extends Seeder
                 'picture_url' =>
                     'https://res.cloudinary.com/deqllunb9/image/upload/v1640787742/civic-source/1_efsws3.png',
                 'market_value' => 40000,
+                'reservation_value' => 5000,
                 'recent_bid_status' => 'winning',
-                'has_neighbor' => true,
+                'recent_bid_value' => 100,
             ],
 
             [
@@ -36,8 +37,9 @@ class PropertySeeder extends Seeder
                 'picture_url' =>
                     'https://res.cloudinary.com/deqllunb9/image/upload/v1640787321/civic-source/2_yl9pvm.jpg',
                 'market_value' => 35000,
+                'reservation_value' => 3000,
                 'recent_bid_status' => 'outbid',
-                'has_neighbor' => false,
+                'recent_bid_value' => 101,
             ],
 
             [
@@ -48,8 +50,22 @@ class PropertySeeder extends Seeder
                 'picture_url' =>
                     'https://res.cloudinary.com/deqllunb9/image/upload/v1640788395/civic-source/4_axorbm.jpg',
                 'market_value' => 35000,
-                'recent_bid_status' => 'outbid',
-                'has_neighbor' => false,
+                'reservation_value' => 1000,
+                'recent_bid_status' => 'active',
+                'recent_bid_value' => 102,
+            ],
+
+            [
+                'id' => 4,
+                'street' => '30 Air St.',
+                'city' => 'Cleveland',
+                'address' => 'LJ 23666',
+                'picture_url' =>
+                    'https://res.cloudinary.com/deqllunb9/image/upload/v1640788105/civic-source/3_glmpl0.jpg',
+                'market_value' => 70000,
+                'reservation_value' => 4500,
+                'recent_bid_status' => 'winning',
+                'recent_bid_value' => 103,
             ],
         ];
 

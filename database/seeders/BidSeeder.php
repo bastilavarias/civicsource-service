@@ -48,6 +48,17 @@ class BidSeeder extends Seeder
                 'winning_count' => 40,
                 'winning_total_value' => 95000,
             ],
+
+            [
+                'id' => 4,
+                'property_id' => 4,
+                'outbid_count' => 18,
+                'outbid_total_value' => 18000,
+                'active_count' => 16,
+                'active_total_value' => 31000,
+                'winning_count' => 21,
+                'winning_total_value' => 20000,
+            ],
         ];
 
         DB::table('bids')->delete();

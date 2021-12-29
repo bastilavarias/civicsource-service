@@ -15,13 +15,14 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
-            $table->string("street");
-            $table->string("city");
-            $table->string("address");
-            $table->text("picture_url");
-            $table->decimal("market_value");
-            $table->string("recent_bid_status");
-            $table->boolean("has_neighbor");
+            $table->string('street');
+            $table->string('city');
+            $table->string('address');
+            $table->text('picture_url');
+            $table->decimal('market_value');
+            $table->decimal('reservation_value');
+            $table->string('recent_bid_status');
+            $table->decimal('recent_bid_value');
             $table->timestamps();
         });
     }

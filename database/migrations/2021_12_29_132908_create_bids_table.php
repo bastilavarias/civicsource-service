@@ -15,13 +15,16 @@ class CreateBidsTable extends Migration
     {
         Schema::create('bids', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("property_id")->nullable()->constrained();
-            $table->integer("outbid_count");
-            $table->decimal("outbid_total_value");
-            $table->integer("active_count");
-            $table->decimal("active_total_value");
-            $table->integer("winning_count");
-            $table->decimal("winning_total_value");
+            $table
+                ->foreignId('property_id')
+                ->nullable()
+                ->constrained();
+            $table->integer('outbid_count');
+            $table->decimal('outbid_total_value');
+            $table->integer('active_count');
+            $table->decimal('active_total_value');
+            $table->integer('winning_count');
+            $table->decimal('winning_total_value');
             $table->timestamps();
         });
     }
