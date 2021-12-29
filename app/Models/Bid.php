@@ -9,7 +9,7 @@ class Bid extends Model
 {
     use HasFactory;
 
-    public function property(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function property()
     {
         return $this->hasOne(Property::class, 'property_id', 'id');
     }
