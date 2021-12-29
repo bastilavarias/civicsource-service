@@ -18,3 +18,5 @@ Route::get('/property/{id}', [
     \App\Http\Controllers\PropertyController::class,
     'show',
 ]);
+
+Route::get('/bid', [\App\Http\Controllers\BidController::class, 'index']);
