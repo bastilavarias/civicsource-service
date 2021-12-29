@@ -17,7 +17,7 @@
 
 ### Project setup
 ```
-composer install
+composer update
 ```
 
 ### To generate default data
