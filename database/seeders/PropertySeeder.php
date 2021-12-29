@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Property;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -52,6 +53,9 @@ class PropertySeeder extends Seeder
             ],
         ];
 
-        DB::table('users')->delete();
+        DB::table('properties')->delete();
+        foreach ($properties as $property) {
+            Property::create($property);
+        }
     }
 }
